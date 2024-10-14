@@ -1,0 +1,24 @@
+To run our solution there are some setup steps that need to be done:
+
+    1. Use Python version 3.9.16 or greater to avoid dependency problems. 
+    2. HDFS must be running with the folders /user/bdm/ created.
+    3. HBase must be running.
+    4. Ensure that run.sh has execution permissions.
+    5. Ensure that the tree of the project has the following format:
+        .
+        ├── data
+        │   ├── idealista
+        │   ├── lookup_tables
+        │   └── opendatabcn-income
+        ├── instructions.txt
+        ├── logs
+        └── scripts
+            ├── dataCollectors.py
+            ├── hdfsToHBase.py
+            ├── requirements.txt
+            └── run.sh
+
+
+All calls to python scripts or installation of libraries can be done
+through the run.sh file. In case of error, you may need to change the
+python command to python3
